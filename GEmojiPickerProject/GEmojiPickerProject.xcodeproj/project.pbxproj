@@ -21,6 +21,19 @@
 		D920CE4F26AA5D75009EB42B /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D920CE4D26AA5D75009EB42B /* UserDefaults.swift */; };
 		D920CE5226AA5DAE009EB42B /* emoji.json in Resources */ = {isa = PBXBuildFile; fileRef = D920CE5126AA5DAE009EB42B /* emoji.json */; };
 		D920CE5326AA5DAE009EB42B /* emoji.json in Resources */ = {isa = PBXBuildFile; fileRef = D920CE5126AA5DAE009EB42B /* emoji.json */; };
+		D9EEFDF126AA9F540084F8F9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EEFDF026AA9F540084F8F9 /* Constants.swift */; };
+		D9EEFDF326AA9F720084F8F9 /* EmojiPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EEFDF226AA9F720084F8F9 /* EmojiPicker.swift */; };
+		D9EEFDF526AA9FA00084F8F9 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EEFDF426AA9FA00084F8F9 /* SearchBar.swift */; };
+		D9EEFDF726AA9FC70084F8F9 /* MainContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EEFDF626AA9FC70084F8F9 /* MainContent.swift */; };
+		D9EEFDF926AA9FF80084F8F9 /* SharedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EEFDF826AA9FF80084F8F9 /* SharedState.swift */; };
+		D9EEFDFB26AAA0BA0084F8F9 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EEFDFA26AAA0BA0084F8F9 /* Keyboard.swift */; };
+		D9EEFDFE26AAA0F10084F8F9 /* SelectionIndexPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EEFDFD26AAA0F10084F8F9 /* SelectionIndexPicker.swift */; };
+		D9EEFE0726AAA5EF0084F8F9 /* EmojiPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EEFDFF26AAA1410084F8F9 /* EmojiPicker.swift */; };
+		D9EEFE0826AAA5F20084F8F9 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EEFE0126AAA16C0084F8F9 /* SearchBar.swift */; };
+		D9EEFE0A26AAA5F60084F8F9 /* OffsetObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EEFE0326AAA1800084F8F9 /* OffsetObserver.swift */; };
+		D9EEFE0B26AAA5F90084F8F9 /* TagButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EEFE0526AAA1940084F8F9 /* TagButton.swift */; };
+		D9EEFE0C26AAA6140084F8F9 /* SharedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EEFDF826AA9FF80084F8F9 /* SharedState.swift */; };
+		D9EEFE0D26AAA6570084F8F9 /* SelectionIndexPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EEFDFD26AAA0F10084F8F9 /* SelectionIndexPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +49,17 @@
 		D920CE4A26AA5D6D009EB42B /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 		D920CE4D26AA5D75009EB42B /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		D920CE5126AA5DAE009EB42B /* emoji.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = emoji.json; sourceTree = "<group>"; };
+		D9EEFDF026AA9F540084F8F9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D9EEFDF226AA9F720084F8F9 /* EmojiPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiPicker.swift; sourceTree = "<group>"; };
+		D9EEFDF426AA9FA00084F8F9 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		D9EEFDF626AA9FC70084F8F9 /* MainContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContent.swift; sourceTree = "<group>"; };
+		D9EEFDF826AA9FF80084F8F9 /* SharedState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedState.swift; sourceTree = "<group>"; };
+		D9EEFDFA26AAA0BA0084F8F9 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
+		D9EEFDFD26AAA0F10084F8F9 /* SelectionIndexPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionIndexPicker.swift; sourceTree = "<group>"; };
+		D9EEFDFF26AAA1410084F8F9 /* EmojiPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiPicker.swift; sourceTree = "<group>"; };
+		D9EEFE0126AAA16C0084F8F9 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		D9EEFE0326AAA1800084F8F9 /* OffsetObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetObserver.swift; sourceTree = "<group>"; };
+		D9EEFE0526AAA1940084F8F9 /* TagButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +98,9 @@
 				D920CE2726AA5D3F009EB42B /* ContentView.swift */,
 				D920CE4726AA5D53009EB42B /* EmojiSection.swift */,
 				D920CE4A26AA5D6D009EB42B /* Emoji.swift */,
+				D9EEFDFD26AAA0F10084F8F9 /* SelectionIndexPicker.swift */,
 				D920CE4D26AA5D75009EB42B /* UserDefaults.swift */,
+				D9EEFDF826AA9FF80084F8F9 /* SharedState.swift */,
 				D920CE2826AA5D44009EB42B /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -92,6 +118,11 @@
 		D920CE2F26AA5D44009EB42B /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				D9EEFDF026AA9F540084F8F9 /* Constants.swift */,
+				D9EEFDF226AA9F720084F8F9 /* EmojiPicker.swift */,
+				D9EEFDF426AA9FA00084F8F9 /* SearchBar.swift */,
+				D9EEFDFC26AAA0BF0084F8F9 /* Extension */,
+				D9EEFDF626AA9FC70084F8F9 /* MainContent.swift */,
 				D920CE3026AA5D44009EB42B /* Info.plist */,
 			);
 			path = iOS;
@@ -102,6 +133,10 @@
 			children = (
 				D920CE3726AA5D44009EB42B /* Info.plist */,
 				D920CE3826AA5D44009EB42B /* macOS.entitlements */,
+				D9EEFDFF26AAA1410084F8F9 /* EmojiPicker.swift */,
+				D9EEFE0126AAA16C0084F8F9 /* SearchBar.swift */,
+				D9EEFE0326AAA1800084F8F9 /* OffsetObserver.swift */,
+				D9EEFE0526AAA1940084F8F9 /* TagButton.swift */,
 			);
 			path = macOS;
 			sourceTree = "<group>";
@@ -112,6 +147,14 @@
 				D920CE5126AA5DAE009EB42B /* emoji.json */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		D9EEFDFC26AAA0BF0084F8F9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D9EEFDFA26AAA0BA0084F8F9 /* Keyboard.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,8 +259,15 @@
 				D920CE4826AA5D53009EB42B /* EmojiSection.swift in Sources */,
 				D920CE4E26AA5D75009EB42B /* UserDefaults.swift in Sources */,
 				D920CE3B26AA5D44009EB42B /* ContentView.swift in Sources */,
+				D9EEFDFB26AAA0BA0084F8F9 /* Keyboard.swift in Sources */,
 				D920CE4B26AA5D6D009EB42B /* Emoji.swift in Sources */,
+				D9EEFDF726AA9FC70084F8F9 /* MainContent.swift in Sources */,
 				D920CE3926AA5D44009EB42B /* GEmojiPickerProjectApp.swift in Sources */,
+				D9EEFDF526AA9FA00084F8F9 /* SearchBar.swift in Sources */,
+				D9EEFDF126AA9F540084F8F9 /* Constants.swift in Sources */,
+				D9EEFDFE26AAA0F10084F8F9 /* SelectionIndexPicker.swift in Sources */,
+				D9EEFDF926AA9FF80084F8F9 /* SharedState.swift in Sources */,
+				D9EEFDF326AA9F720084F8F9 /* EmojiPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,10 +275,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9EEFE0B26AAA5F90084F8F9 /* TagButton.swift in Sources */,
+				D9EEFE0826AAA5F20084F8F9 /* SearchBar.swift in Sources */,
 				D920CE4926AA5D53009EB42B /* EmojiSection.swift in Sources */,
 				D920CE4F26AA5D75009EB42B /* UserDefaults.swift in Sources */,
 				D920CE3C26AA5D44009EB42B /* ContentView.swift in Sources */,
+				D9EEFE0D26AAA6570084F8F9 /* SelectionIndexPicker.swift in Sources */,
 				D920CE4C26AA5D6D009EB42B /* Emoji.swift in Sources */,
+				D9EEFE0726AAA5EF0084F8F9 /* EmojiPicker.swift in Sources */,
+				D9EEFE0A26AAA5F60084F8F9 /* OffsetObserver.swift in Sources */,
+				D9EEFE0C26AAA6140084F8F9 /* SharedState.swift in Sources */,
 				D920CE3A26AA5D44009EB42B /* GEmojiPickerProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

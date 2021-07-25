@@ -5,7 +5,17 @@
 //  Created by GoEun Jeong on 2021/07/23.
 //
 
-import Foundation
+import SwiftUI
+
+public extension Color {
+    static var background: Color {
+        #if os(iOS)
+        return Color(UIColor.systemBackground)
+        #elseif os(macOS)
+        return Color(NSColor.windowBackgroundColor)
+        #endif
+    }
+}
 
 @propertyWrapper
 public struct UserDefaultWrapper<Value> {

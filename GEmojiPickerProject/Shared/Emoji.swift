@@ -71,7 +71,7 @@ public extension EmojiStore {
         switch sectionType {
         case .recent: return "clock"
         case .smileys: return "smiley"
-        case .people: return "person.2"
+        case .people: return "person.3"
         case .animals: return "tortoise"
         case .food: return "heart"
         case .travel: return "car"

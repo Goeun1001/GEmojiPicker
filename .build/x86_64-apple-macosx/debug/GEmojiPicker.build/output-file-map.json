@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/jge/Documents/dev/GEmojiPicker/.build/x86_64-apple-macosx/debug/GEmojiPicker.build/master.swiftdeps"
+  },
+  "/Users/jge/Documents/dev/GEmojiPicker/Sources/GEmojiPicker/GEmojiPicker.swift": {
+    "dependencies": "/Users/jge/Documents/dev/GEmojiPicker/.build/x86_64-apple-macosx/debug/GEmojiPicker.build/GEmojiPicker.d",
+    "object": "/Users/jge/Documents/dev/GEmojiPicker/.build/x86_64-apple-macosx/debug/GEmojiPicker.build/GEmojiPicker.swift.o",
+    "swiftmodule": "/Users/jge/Documents/dev/GEmojiPicker/.build/x86_64-apple-macosx/debug/GEmojiPicker.build/GEmojiPicker~partial.swiftmodule",
+    "swift-dependencies": "/Users/jge/Documents/dev/GEmojiPicker/.build/x86_64-apple-macosx/debug/GEmojiPicker.build/GEmojiPicker.swiftdeps"
+  }
+}

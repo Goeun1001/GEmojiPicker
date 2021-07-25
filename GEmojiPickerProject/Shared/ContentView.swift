@@ -8,9 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var isOpen = true
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        #if os(iOS) {
+            EmojiPicker(isOpen: $isOpen, completionHandler: {
+                print($0.string)
+            })
+        } #elseif {
+            EmojiPicker(emojiStore: EmojiStore(), selectionHandler: { print($0.string
+            ) })
+            .environmentObject(SharedState())
+            }
+        #endif
+        Text("")
     }
 }
 
