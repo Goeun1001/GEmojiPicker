@@ -18,6 +18,10 @@ Pod::Spec.new do |spec|
   spec.author             = { "Goeun1001" => "gogo8272@gmail.com" }
   spec.ios.deployment_target = '14.0'
   spec.osx.deployment_target = '11.0'
+  spec.ios.source_files   = 'Sources/GEmojiPicker/iOS/*.swift'
+  spec.osx.source_files   = 'Sources/GEmojiPicker/OSX/*.swift'
+  spec.ios.framework  = 'UIKit'
+  spec.osx.framework  = 'AppKit'
   spec.source       = { :git => "https://github.com/Goeun1001/GEmojiPicker.git", :tag => "#{spec.version}" }
   spec.source_files  = "Sources/*", "Sources/**/*"
   
