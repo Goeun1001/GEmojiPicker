@@ -1,5 +1,0 @@
-version: "Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)"
-options: "de2a371f18b9a59fcbd954685c1ed937"
-build_time: [1627006247, 438686000]
-inputs:
-  "/Users/jge/Documents/dev/GEmojiPicker/Sources/GEmojiPicker/GEmojiPicker.swift": [1627006238, 4891849]

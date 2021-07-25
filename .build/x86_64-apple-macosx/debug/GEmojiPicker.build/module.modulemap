@@ -1,4 +1,0 @@
-module GEmojiPicker {
-    header "/Users/jge/Documents/dev/GEmojiPicker/.build/x86_64-apple-macosx/debug/GEmojiPicker.build/GEmojiPicker-Swift.h"
-    requires objc
-}
