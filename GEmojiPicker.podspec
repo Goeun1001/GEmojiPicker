@@ -24,5 +24,10 @@ Pod::Spec.new do |spec|
   spec.osx.framework  = 'AppKit'
   spec.source       = { :git => "https://github.com/Goeun1001/GEmojiPicker.git", :tag => "#{spec.version}" }
   spec.source_files  = "Sources/*", "Sources/**/*"
+  spec.resource_bundles = {
+    'GEmojiPicker_GEmojiPicker' => [
+        'Sources/Shared/Resource/*'
+    ]
+  }
   
 end
