@@ -17,8 +17,6 @@ public struct EmojiPicker: View {
     
     @State private var categoryUpdatedByOffset = false
     
-    @State private var currentKaomojiTag: String?
-    
     public init(emojiStore: EmojiStore, selectionHandler: @escaping (Emoji)->Void) {
         self.emojiStore = emojiStore
         self.selectionHandler = selectionHandler

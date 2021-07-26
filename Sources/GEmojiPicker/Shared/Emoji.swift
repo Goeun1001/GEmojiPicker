@@ -36,7 +36,7 @@ public final class EmojiStore {
     private static let itemPerGroup: Int = 7
     
     public init() {
-        guard let emojiURL = Bundle.main.url(forResource: "emoji", withExtension: "json") else {
+        guard let emojiURL = Bundle.module.url(forResource: "emoji", withExtension: "json") else {
             self.allEmojis = []
             self.emojisByCategory = [:]
             return
