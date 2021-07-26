@@ -26,7 +26,7 @@ Pod::Spec.new do |spec|
   spec.source_files  = "Sources/*", "Sources/**/*"
   spec.resource_bundles = {
     'GEmojiPicker_GEmojiPicker' => [
-        'Sources/Shared/Resource/*'
+        'Sources/GEmojiPicker/Shared/Resource/*'
     ]
   }
   
