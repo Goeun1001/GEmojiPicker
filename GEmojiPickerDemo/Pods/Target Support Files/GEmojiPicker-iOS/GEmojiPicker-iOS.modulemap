@@ -1,6 +1,0 @@
-framework module GEmojiPicker {
-  umbrella header "GEmojiPicker-iOS-umbrella.h"
-
-  export *
-  module * { export * }
-}

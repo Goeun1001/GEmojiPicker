@@ -9,7 +9,7 @@
 
 import SwiftUI
 
-struct EmojiPicker: View {
+public struct EmojiPicker: View {
     
     @Binding var isOpen: Bool
     var selectionHandler: (Emoji)-> ()
@@ -43,7 +43,7 @@ struct EmojiPicker: View {
         self.selectionHandler = selectionHandler
     }
     
-    var body: some View {
+    public var body: some View {
         ZStack {
             
             MainContent()
