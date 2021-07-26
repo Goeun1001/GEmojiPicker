@@ -9,7 +9,7 @@
 
 import SwiftUI
 
-public struct EmojiPicker: View {
+struct EmojiPicker: View {
     @EnvironmentObject var sharedState: SharedState
     
     var emojiStore: EmojiStore
@@ -19,12 +19,12 @@ public struct EmojiPicker: View {
     
     @State private var currentKaomojiTag: String?
     
-    public init(emojiStore: EmojiStore, selectionHandler: @escaping (Emoji)->Void) {
+    init(emojiStore: EmojiStore, selectionHandler: @escaping (Emoji)->Void) {
         self.emojiStore = emojiStore
         self.selectionHandler = selectionHandler
     }
     
-    public var body: some View {
+    var body: some View {
         VStack(spacing: 0) {
             HStack(spacing: 2) {
                 SearchBar()

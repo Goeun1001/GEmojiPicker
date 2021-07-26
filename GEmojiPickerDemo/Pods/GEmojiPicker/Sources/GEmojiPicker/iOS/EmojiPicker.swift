@@ -9,7 +9,7 @@
 
 import SwiftUI
 
-struct EmojiPicker: View {
+public struct EmojiPicker: View {
     
     @Binding var isOpen: Bool
     var selectionHandler: (Emoji)-> ()
@@ -20,6 +20,11 @@ struct EmojiPicker: View {
     @State var isDraggingDown: Bool = false
     
     @ObservedObject var sharedState = SharedState()
+    
+    public init(isOpen: Binding<Bool>, selectionHandler: @escaping (Emoji) -> ()) {
+        self._isOpen = isOpen
+        self.selectionHandler = selectionHandler
+    }
     
     var offsetY: CGFloat {
         guard isOpen else { return Constants.hiddenOffset }
@@ -38,12 +43,7 @@ struct EmojiPicker: View {
         return calculatedOffsetY
     }
     
-    public init(isOpen: Binding<Bool>, selectionHandler: @escaping (Emoji) -> ()) {
-        self._isOpen = isOpen
-        self.selectionHandler = selectionHandler
-    }
-    
-    var body: some View {
+    public var body: some View {
         ZStack {
             
             MainContent()

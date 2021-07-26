@@ -1,0 +1,16 @@
+PODS:
+  - GEmojiPicker (1.0.0)
+
+DEPENDENCIES:
+  - GEmojiPicker
+
+SPEC REPOS:
+  trunk:
+    - GEmojiPicker
+
+SPEC CHECKSUMS:
+  GEmojiPicker: 69228f9401ccafc9bad5e6430817398f861c1472
+
+PODFILE CHECKSUM: b8bfe0054dd3292bd6a8dcf9817d4c8a7a0d41d4
+
+COCOAPODS: 1.10.1
