@@ -5,6 +5,8 @@
 //  Created by GoEun Jeong on 2021/07/23.
 //
 
+#if os(iOS)
+
 import SwiftUI
 
 struct EmojiPicker: View {
@@ -126,3 +128,5 @@ struct EmojiPicker_Previews: PreviewProvider {
         EmojiPicker(isOpen: .constant(true), completionHandler: { _ in })
     }
 }
+
+#endif

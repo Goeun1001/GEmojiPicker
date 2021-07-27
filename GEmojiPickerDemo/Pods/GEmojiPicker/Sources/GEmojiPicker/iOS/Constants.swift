@@ -5,6 +5,8 @@
 //  Created by GoEun Jeong on 2021/07/23.
 //
 
+#if os(iOS)
+
 import UIKit
 
 enum Constants {
@@ -17,3 +19,5 @@ enum Constants {
     static let fullOffset: CGFloat = 24
     static let hiddenOffset: CGFloat = screenHeight
 }
+
+#endif

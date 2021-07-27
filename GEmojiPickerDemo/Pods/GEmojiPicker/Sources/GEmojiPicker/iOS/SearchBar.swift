@@ -5,6 +5,8 @@
 //  Created by GoEun Jeong on 2021/07/23.
 //
 
+#if os(iOS)
+
 import SwiftUI
 
 struct SearchBar: View {
@@ -61,3 +63,5 @@ struct SearchBar_Previews: PreviewProvider {
             .environmentObject(SharedState())
     }
 }
+
+#endif

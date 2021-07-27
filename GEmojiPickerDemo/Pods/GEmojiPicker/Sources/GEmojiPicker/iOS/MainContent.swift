@@ -5,6 +5,8 @@
 //  Created by GoEun Jeong on 2021/07/23.
 //
 
+#if os(iOS)
+
 import SwiftUI
 
 struct MainContent: View {
@@ -120,3 +122,5 @@ struct MainContent_Previews: PreviewProvider {
             .environmentObject(SharedState())
     }
 }
+
+#endif

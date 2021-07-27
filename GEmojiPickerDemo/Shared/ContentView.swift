@@ -10,7 +10,10 @@ import GEmojiPicker
 
 struct ContentView: View {
     var body: some View {
-        EmojiPicker(isOpen: .constant(true), selectionHandler: { _ in })
+        let shared = SharedState()
+        EmojiPicker(emojiStore: EmojiStore(), selectionHandler: { _ in })
+            .environmentObject(shared)
+//        EmojiPicker(isOpen: .constant(true), selectionHandler: { _ in })
     }
 }
 
