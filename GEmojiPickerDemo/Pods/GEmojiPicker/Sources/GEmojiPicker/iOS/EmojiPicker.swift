@@ -47,7 +47,7 @@ struct EmojiPicker: View {
                 .gesture(panelDragGesture)
                 .onChange(of: sharedState.selectedEmoji) { value in
                     if let value = value {
-                        completionHandler(value)
+                        selectionHandler(value)
                         EmojiStore.saveRecentEmoji(value)
                         resetViews()
                     }
@@ -125,7 +125,7 @@ struct EmojiPicker: View {
 
 struct EmojiPicker_Previews: PreviewProvider {
     static var previews: some View {
-        EmojiPicker(isOpen: .constant(true), completionHandler: { _ in })
+        EmojiPicker(isOpen: .constant(true), selectionHandler: { _ in })
     }
 }
 
