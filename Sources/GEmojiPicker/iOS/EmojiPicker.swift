@@ -13,7 +13,7 @@ public struct EmojiPicker: View {
     
     @Binding var isOpen: Bool
     var selectionHandler: (Emoji)-> ()
-//    @Binding var selectedEmoji: Emoji?
+    var isSearchBar: Bool
     
     @State var calculatedOffsetY: CGFloat = Constants.halfOffset
     @State var lastOffsetY: CGFloat = Constants.halfOffset
@@ -38,15 +38,15 @@ public struct EmojiPicker: View {
         return calculatedOffsetY
     }
     
-    public init(isOpen: Binding<Bool>, selectionHandler: @escaping (Emoji) -> ()) {
+    public init(isOpen: Binding<Bool>, selectionHandler: @escaping (Emoji) -> (), isSearchBar: Bool = false) {
         self._isOpen = isOpen
         self.selectionHandler = selectionHandler
+        self.isSearchBar = isSearchBar
     }
     
     public var body: some View {
         ZStack {
-            
-            MainContent()
+            MainContent(isSearchBar: isSearchBar)
                 .offset(y: offsetY)
                 .animation(.spring())
                 .gesture(panelDragGesture)
@@ -125,12 +125,6 @@ public struct EmojiPicker: View {
         lastOffsetY = calculatedOffsetY
         isOpen = false
         sharedState.resetState()
-    }
-}
-
-struct EmojiPicker_Previews: PreviewProvider {
-    static var previews: some View {
-        EmojiPicker(isOpen: .constant(true), selectionHandler: { _ in })
     }
 }
 

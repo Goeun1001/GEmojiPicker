@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "GEmojiPicker"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.swift_version = "5.0"
   spec.summary      = "iOS & MacOS Emoji Picker"
   spec.description  = "SwiftUI iOS & MacOS Emoji Picker"

@@ -13,6 +13,11 @@ struct MainContent: View {
     @EnvironmentObject var sharedState: SharedState
     
     var emojiStore = EmojiStore.shared
+    var isSearchBar: Bool
+    
+    init(isSearchBar: Bool) {
+        self.isSearchBar = isSearchBar
+    }
     
     var body: some View {
         VStack {
@@ -20,11 +25,13 @@ struct MainContent: View {
             self.indicator
             
             VStack(spacing: 0) {
-                SearchBar()
-                    .padding(16)
-                    .environmentObject(sharedState)
-                
-                self.separator
+                if isSearchBar {
+                    SearchBar()
+                        .padding(16)
+                        .environmentObject(sharedState)
+                    
+                    self.separator
+                }
                 
                 ZStack {
                     self.emojiSections
@@ -113,13 +120,6 @@ struct MainContent: View {
                 }
             }
         }
-    }
-}
-
-struct MainContent_Previews: PreviewProvider {
-    static var previews: some View {
-        MainContent()
-            .environmentObject(SharedState())
     }
 }
 

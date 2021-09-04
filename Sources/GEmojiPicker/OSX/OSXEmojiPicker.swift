@@ -14,23 +14,27 @@ public struct EmojiPicker: View {
     
     var emojiStore: EmojiStore
     var selectionHandler: (Emoji)->Void
+    var isSearchBar: Bool
     
     @State private var categoryUpdatedByOffset = false
     
-    public init(emojiStore: EmojiStore, selectionHandler: @escaping (Emoji)->Void) {
+    public init(emojiStore: EmojiStore, selectionHandler: @escaping (Emoji)->Void, isSearchBar: Bool = false) {
         self.emojiStore = emojiStore
         self.selectionHandler = selectionHandler
+        self.isSearchBar = isSearchBar
     }
     
     public var body: some View {
         VStack(spacing: 0) {
-            HStack(spacing: 2) {
-                SearchBar()
-                    .environmentObject(sharedState)
+            if isSearchBar {
+                HStack(spacing: 2) {
+                    SearchBar()
+                        .environmentObject(sharedState)
+                }
+                .font(.title3)
+                .foregroundColor(Color(NSColor.textColor))
+                .padding(.trailing, 8)
             }
-            .font(.title3)
-            .foregroundColor(Color(NSColor.textColor))
-            .padding(.trailing, 8)
             
             ZStack {
                 
@@ -148,14 +152,6 @@ public struct EmojiPicker: View {
             return SectionType.defaultCategories.map { $0.rawValue }
         }
         return SectionType.allCases.map { $0.rawValue }
-    }
-}
-
-struct EmojiPicker_Previews: PreviewProvider {
-    static var previews: some View {
-        EmojiPicker(emojiStore: EmojiStore.shared,
-                    selectionHandler: { _ in })
-            .environmentObject(SharedState())
     }
 }
 
